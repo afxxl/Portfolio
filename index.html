@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/title-image.jpg" />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/4c08998d73.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/profile.css" />
+    <link rel="stylesheet" href="./styles/aboutme.css" />
+    <link rel="stylesheet" href="./styles/education.css" />
+    <link rel="stylesheet" href="./styles/project.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/testimony.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <style>
+      .error-message {
+        color: red;
+        font-size: 0.9em;
+        display: block; /* Hidden by default, will be displayed when there's an error */
+        margin-top: 5px;
+      }
+      .text-center {
+        text-align: center;
+      }
+
+      #loading {
+        display: none;
+        color: blue;
+        font-weight: bold;
+      }
+
+      .sent-message {
+        display: none;
+        color: green;
+        font-weight: bold;
+      }
+
+      .btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="./">Mohammed Afsal P K</a>
+      </div>
+      <div class="nav-right">
+        <a href="https://github.com/afxxl">
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+        <a href="www.linkedin.com/in/mohammed-afsal-b28234220">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+        <a href="mailto:afsalmohammed393@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="description">
+          <h2>Hi, I'm Mohammed Afsal P K</h2>
+
+          <p>
+            A Computer Science graduate passionate about
+            <span>Full-Stack Development</span> and
+            <span>Web Technologies</span>. I specialize in building dynamic and
+            responsive web applications using the MERN stack (MongoDB,
+            Express.js, React, and Node.js). With hands-on experience and a
+            drive for continuous learning, I’m excited to tackle challenges in
+            technology and innovation. Welcome to my portfolio!
+          </p>
+
+          <div class="links">
+            <a href="#about-me">
+              <i class="fa-solid fa-person"></i>
+              <span>About me</span>
+            </a>
+            <a href="#education">
+              <i class="fa-solid fa-school"></i>
+              <span>Education</span>
+            </a>
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
+            <a href="#projects">
+              <i class="fa-solid fa-file"></i>
+              <span>Projects</span>
+            </a>
+            <a href="#testimony">
+              <i class="fa-solid fa-pen"></i>
+              <span>Testimony</span>
+            </a>
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="profile-image">
+          <img src="./images/Me.jpeg" alt="profile picture" />
+        </div>
+      </section>
+
+      <section id="about-me" class="about-me-section">
+        <h2>About Me</h2>
+        <div class="detailed-descr">
+          <p>
+            I’m Mohammed Afsal P K, a passionate Computer Science graduate from
+            Hansraj College, University of Delhi, with a strong interest in
+            Full-Stack Development and Web Technologies. My journey in the tech
+            world began with a curiosity to understand how technology can solve
+            real-world problems. Over the years, I’ve honed my skills through
+            rigorous academics, hands-on projects, and impactful internships.
+          </p>
+
+          <p>
+            I’ve had the privilege of working on a variety of projects, ranging
+            from developing dynamic web applications to designing robust APIs,
+            utilizing powerful technologies like MongoDB, Express.js, React, and
+            Node.js. These experiences have deepened my expertise in full-stack
+            development, enabling me to craft scalable, efficient, and
+            user-centric solutions that deliver real value.
+          </p>
+          <p>
+            Beyond my technical skills, I take pride in being a proactive team
+            player and a lifelong learner. I’m passionate about exploring the
+            latest trends in web development, staying ahead in an ever-evolving
+            industry, and continuously pushing myself to grow both
+            professionally and personally.
+          </p>
+          <p>
+            When I’m not coding or refining my craft, you’ll likely find me
+            immersed in a good book, reconnecting with nature, or brainstorming
+            innovative ways to leverage my skills in meaningful and impactful
+            projects.
+          </p>
+          <p>
+            Thank you for visiting my portfolio! If you’re looking for
+            collaboration or have an exciting opportunity in mind, feel free to
+            get in touch—I’d love to connect.
+          </p>
+        </div>
+      </section>
+
+      <section id="education" class="education-section">
+        <div class="container-section">
+          <div class="container">
+            <h3>Qualification</h3>
+            <p class="year">2021-2024</p>
+            <p class="course">Bachelor of Science (Hons.). Computer Science</p>
+            <p class="college">Hansraj College , University of Delhi</p>
+            <p class="subjects">
+              <span>Key Contents:</span>Data Structures and Algorithms, Full
+              Stack Development, Database Management, Artificial Intelligence
+            </p>
+          </div>
+          <div class="container">
+            <h3>Certifications</h3>
+            <p class="year">2024</p>
+            <p class="course">High Performance Computing Workshop</p>
+            <p class="college">IIT Kharagpur</p>
+            <p class="subjects">
+              <span>Key Contents:</span>High Performance Computing, Parallel
+              Processing ,Optimization strategie
+            </p>
+          </div>
+
+          <div class="container">
+            <h3>Certifications</h3>
+            <p class="year">2022</p>
+            <p class="course">Full-Stack Web Development Course</p>
+            <p class="college">Udemy</p>
+            <p class="subjects">
+              <span>Key Contents:</span> Front-End Development (HTML, CSS,
+              JavaScript), Back-End Development (Node.js, Express.js), Database
+              Management (MongoDB).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+
+        <div class="skills-descr">
+          <br />
+          <p>
+            I have a strong foundation in programming, with expertise in
+            JavaScript, HTML, and CSS, allowing me to build dynamic and
+            responsive front-end interfaces. My back-end skills include
+            proficiency in Node.js and Express.js, enabling me to create robust
+            server-side applications. I am also well-versed in database
+            management using MongoDB, allowing me to design and manage efficient
+            data-driven solutions.
+          </p>
+          <br />
+          <br />
+          <p>
+            In addition to technical skills, I am experienced with version
+            control systems like Git and GitHub, ensuring smooth collaboration
+            and streamlined workflows. I have successfully developed and
+            deployed full-stack web applications that provide scalable and
+            user-friendly solutions to real-world problems. My approach is
+            complemented by strong analytical thinking, problem-solving
+            abilities, and attention to detail. I prioritize effective
+            communication and collaboration to deliver impactful results in
+            every project I undertake.
+          </p>
+          <br />
+        </div>
+        <div class="cells">
+          <div class="cell">
+            <img src="./images/html-logo.webp" alt="html logo" />
+            <span>HTML</span>
+          </div>
+          <div class="cell">
+            <img src="./images/css-logo.webp" alt="css logo" />
+            <span>CSS</span>
+          </div>
+          <div class="cell">
+            <img
+              src="./images/icons8-javascript-48.png"
+              alt="JavaScript logo"
+            />
+            <span>Java Script</span>
+          </div>
+          <div class="cell">
+            <img src="./images/icons8-c++-48.png" alt="c++ logo" />
+            <span>C++</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="project-section">
+        <h2>Academic Projects</h2>
+        <div class="container-section">
+          <div class="container">
+            <h3>Web Development Project</h3>
+            <p class="project-name">SCHOLARSHIP PORTAL</p>
+            <p class="year">2023</p>
+            <p class="project-descr">
+              Developed a full-stack web application for managing and applying
+              for scholarships using the MERN stack.
+            </p>
+            <p class="project-descr">
+              Designed a responsive front-end interface with React.js, allowing
+              users to browse available scholarships, view eligibility criteria,
+              and submit applications.
+            </p>
+            <p class="project-descr">
+              Built a robust back-end with Node.js and Express.js to handle user
+              authentication, application submission, and admin management of
+              scholarships.
+            </p>
+            <p class="project-descr">
+              Implemented a MongoDB database to store user data, scholarship
+              details, and application records efficiently.
+            </p>
+            <p class="project-descr">
+              The result is a user-friendly platform that streamlines the
+              scholarship application process for students while providing an
+              efficient management system for administrators.
+            </p>
+          </div>
+          <div class="container">
+            <h3>DAV Project</h3>
+            <p class="project-name">WINE QUALITY ANALYSIS</p>
+            <p class="year">2024</p>
+            <p class="project-descr">
+              Conducted a comprehensive data analysis project evaluating the
+              quality of various wines basedontheirchemical properties.
+            </p>
+            <p class="project-descr">
+              Utilized Python libraries (Pandas, NumPy) for data cleaning and
+              preprocessing
+            </p>
+            <p class="project-descr">
+              Performed exploratory data analysis (EDA) to uncover patterns and
+              correlations
+            </p>
+            <p class="project-descr">
+              Developed visualizations using Matplotlib and Seaborn to represent
+              data insights
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimony" class="testimony-section">
+        <h2>Testimony</h2>
+        <div class="group">
+          <div class="person-details">
+            <img src="./images/aman.jpg" alt="Photo of Aman Amahad" />
+            <p>Aman Ahmad P V</p>
+            <p>MBA.Data Analytics in PU</p>
+          </div>
+
+          <div class="testimony-descr">
+            "During our undergraduate years, I had the privilege of
+            collaborating with Afsal on a web development project called
+            <span style="font-weight: 600">SCHOLARSHIP PORTAL</span>. Throughout
+            the project, I was consistently impressed by his exceptional coding
+            and problem-solving skills. I vividly recall a critical moment just
+            a day before the final presentation, where we encountered a major
+            issue in the application’s back-end functionality that jeopardized
+            the project. However, thanks to Afsal's technical expertise and calm
+            demeanor under pressure, we were able to resolve the issue and
+            deliver a fully functional platform. His dedication, innovative
+            thinking, and attention to detail make him an invaluable teammate."
+          </div>
+        </div>
+        <div class="group">
+          <div class="person-details">
+            <img src="./images/profile.png" alt="Photo of Anantha Krishna" />
+            <p>Anantha Krishna</p>
+            <p>NIMCET Aspirant</p>
+          </div>
+
+          <div class="testimony-descr">
+            "Collaborating with Afsal's on our
+            <span style="font-weight: 600">Wine Quality Analysis</span> project
+            was an enlightening experience. His deep understanding of data
+            analytics and exploratory data analysis techniques was instrumental
+            in uncovering insights from the wine dataset. Afsal's meticulous
+            approach to data preprocessing and visualization ensured a
+            comprehensive understanding of the factors influencing wine quality.
+            His ability to translate complex data into actionable insights
+            significantly enhanced the project's success. Working alongside him
+            was both educational and inspiring."
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2>Leave a Message</h2>
+        <div class="group">
+          <div class="contact-descr">
+            <p>Quick Contact</p>
+            <span
+              >Don’t hesitate to connect if you’re interested in collaborating
+              or discussing exciting opportunities!
+            </span>
+          </div>
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            id="contactForm"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="91601085-cd25-49d2-a4ec-df7168498970"
+            />
+            <input
+              type="hidden"
+              name="email"
+              value="afsalmohammed393@gmail.com"
+            />
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <span class="error-message" id="nameError"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error-message" id="emailError"></span>
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <span class="error-message" id="messageError"></span>
+
+            <div class="text-center">
+              <div id="loading" style="display: none">Loading...</div>
+              <div
+                class="sent-message"
+                id="successMessage"
+                style="display: none"
+              >
+                Your message has been sent. Thank you!
+              </div>
+              <div
+                class="error-message"
+                id="errorMessage"
+                style="display: none"
+              >
+                Error sending message.
+              </div>
+              <button type="submit" id="submitBtn" class="btn">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+
+      <div class="copyright">
+        <p>© 2025 Mohammed Afsal P K. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent traditional form submission
+
+          // Clear previous error messages
+          document.getElementById("nameError").textContent = "";
+          document.getElementById("emailError").textContent = "";
+          document.getElementById("messageError").textContent = "";
+
+          const nameInput = document.getElementById("name").value.trim();
+          const emailInput = document.getElementById("email").value.trim();
+          const messageInput = document.getElementById("message").value.trim();
+
+          // Basic validation
+          if (nameInput === "" || /\d/.test(nameInput)) {
+            document.getElementById("nameError").textContent =
+              "Please enter a valid name without numbers.";
+            return;
+          }
+
+          if (emailInput === "") {
+            document.getElementById("emailError").textContent =
+              "Please enter a valid email.";
+            return;
+          }
+
+          if (messageInput === "") {
+            document.getElementById("messageError").textContent =
+              "Please enter your message.";
+            return;
+          }
+
+          // Show loading indicator
+          document.getElementById("loading").style.display = "block";
+
+          // Create a FormData object to capture the form data
+          const formData = new FormData(this);
+
+          // Send the form data using Fetch API
+          fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => {
+              document.getElementById("loading").style.display = "none"; // Hide loading indicator
+
+              if (response.ok) {
+                document.getElementById("successMessage").style.display =
+                  "block";
+                document.getElementById("errorMessage").style.display = "none";
+                this.reset(); // Clear form fields
+              } else {
+                document.getElementById("errorMessage").style.display = "block";
+              }
+            })
+            .catch((error) => {
+              document.getElementById("loading").style.display = "none"; // Hide loading indicator
+              document.getElementById("errorMessage").style.display = "block";
+              console.error("Error:", error); // Log detailed error to the console
+            });
+        });
+    </script>
+  </body>
+</html>
